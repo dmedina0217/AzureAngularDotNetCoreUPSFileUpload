@@ -1,0 +1,2 @@
+# AzureAngularDotNetCoreUPSFileUpload
+Template app
