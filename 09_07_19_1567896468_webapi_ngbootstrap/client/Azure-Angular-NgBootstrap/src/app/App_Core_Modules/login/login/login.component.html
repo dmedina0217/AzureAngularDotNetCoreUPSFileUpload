@@ -1,0 +1,40 @@
+<br>
+
+<div  fxLayout="column" fxLayoutAlign="center center"  >
+    
+        <div class="card"  >
+                <nav class="navbar navbar" style="background-color:#330000">
+                        <span class="navbar-brand mb-0 h1" style="color:white">Login</span>
+                      </nav>
+            <div style="padding:40px">
+                    <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input [(ngModel)]="model.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input [(ngModel)]="model.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <!--button-->
+                            <div >
+                                    <button (click)="loginBtn()" type="submit" class="btn btn-primary">Submit</button>
+
+                            </div>
+                          </form>
+
+            </div>
+           
+        </div>
+     
+
+</div>
+
+
+<!-- 
+<div fxLayoutAlign="center center">
+    <button>This is button</button>
+
+</div>
+   -->

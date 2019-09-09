@@ -1,0 +1,25 @@
+
+
+<nav class="navbar navbar" style='background-color: #330000'>
+  <span class="navbar-brand mb-0 h1" style='color:white'>Azure_Angular</span>
+  <div class="spacer"></div>
+  <button (click)="login()" class="btn btn-success">Login</button>
+</nav>
+
+
+<div fxLayout="row">
+
+<nav fxHide.xs="true" fxHide.sm="true" class="nav flex-column" style="background-color:#FFD100;width:7%;height:900px" >
+
+    <a class="nav-link active aColor" href="#">Home</a>
+    <a class="nav-link aColor" href="#">File Upload</a>
+    <a class="nav-link aColor" href="#">Users</a>
+    <a class="nav-link disabled aColor" href="#" tabindex="-1" aria-disabled="true">Logout</a>
+  </nav>
+  <div fxFlex></div>
+
+<router-outlet></router-outlet>
+<div fxFlex></div>
+
+
+</div>

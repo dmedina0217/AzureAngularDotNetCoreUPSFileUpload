@@ -1,0 +1,32 @@
+<p>uploadfile works!</p>
+
+
+<div style="margin-bottom: 0px" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Upload File</h1>
+          <p class="lead">View uploaded files and download the results</p>
+        </div>
+      </div>
+
+
+      <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-6">File Details</h1>
+              <div style="padding:20px">
+                  <p>Only accecptable file type is CSV</p>
+                  <ul *ngFor="let u of upsTypes" class="list-group">
+                      <li class="list-group-item">{{u.name}}: {{u.description}}</li>
+                      
+                  </ul>
+
+              </div>
+              <div>
+                  <input type="file" name="FileUpload">
+
+              </div>
+              <br>
+              <div>
+                  <button class="btn btn-success">Upload</button>
+              </div>
+            </div>
+          </div>
